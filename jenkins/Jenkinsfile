@@ -21,10 +21,14 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh'
             }
+        }
         stage('End') {
             steps {
                echo "Pipeline End"
-            }    
+            }
+        
         }
     }
-}
+        
+    }
+
